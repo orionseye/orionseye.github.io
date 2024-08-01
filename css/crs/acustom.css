@@ -1,0 +1,743 @@
+/******************
+overrides
+******************/
+body {
+  overflow-x:hidden;/*fix stupid overflow when positioning elements negative, absolute right*/
+}
+		.logo img {
+			margin: 1.5em 0 0 2em;
+		}
+		.cloud {
+			background-color: #fff;
+			background-image: -webkit-linear-gradient(hsla(0,0%,0%,0), hsla(0,0%,0%,.1));
+			border-radius: 1em;
+			box-shadow: inset 0 0 0 1px hsla(0,0%,100%,.5);
+			display: inline-block;
+			height: 1em;
+			left: 5px;
+			margin-left: -1.5em;
+			position: absolute;
+			top: 50%;
+			width: 3em;
+			-webkit-filter: drop-shadow(0 2px 3px hsla(0,0%,0%,.25));
+		}
+		.cloud:after,
+		.cloud:before {
+			background-color: #fff;
+			content: '';
+			border-radius: 100%;
+			position: absolute;
+		}
+		.cloud:after {
+			background-image: -webkit-linear-gradient(hsla(0,0%,0%,0) 50%, hsla(0,0%,0%,.025));
+			height: 1em;
+			right: .4em;
+			top: -.5em;
+			width: 1em;
+		}
+		.cloud:before {
+			background-image: -webkit-linear-gradient(hsla(0,0%,0%,0) 50%, hsla(0,0%,0%,.075));
+			height: 1.6em;
+			left: .4em;
+			top: -.75em;
+			width: 1.6em;
+		}
+.button {
+    background-color: #2e3d62;
+    color: #fff;
+	border: 1px solid #2e3d62;
+	text-transform: none;
+	border-radius: 0px;
+}
+.button:hover {
+    background-color: transparent;
+    color: #2e3d62;
+}
+pre {
+    background-color: transparent;
+    color: inherit;
+    font-size: inherit;
+    overflow-x: auto;
+    padding: 0rem 0rem;
+    white-space: pre;
+    word-wrap: normal;
+}
+
+strong{
+    font-weight:bolder
+	}
+
+.header-menu-area {
+    background-color: transparent;
+}
+.main-menu ul li {
+    font-weight: 300;
+}
+.main-menu ul li a {
+	padding-bottom: 50px;
+}
+.home-page-3 {
+  /*2a88b1/eee*/
+  background: #74a4ec2b;/* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #74a4ec2b, #fff);/*Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #74a4ec2b, #fff); /*W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.banner-item-wrap {
+    padding-top: 200px;
+}
+.home-page-3 .banner-content .section-heading  .section__meta {
+	color: #2c3e50;
+}
+.home-page-3 .banner-content .section-heading .section__title,
+.hero-banner-area .hero-banner-one .section__title {
+    font-weight: 300;
+	font-size: 42px;
+	line-height: 2.25rem;
+	color: #2e3d62;
+}
+.home-page-3 .banner-content .section-heading p {
+	color: #2e3d62;
+}
+.home-page-3:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: url(../../images/carb2.png) bottom no-repeat;
+    background-size: contain;
+    right: 0;
+	opacity: 1 !important;
+    z-index: 1;
+}
+.home-page-3:before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: url(../../images/carb1.png) top no-repeat;
+    background-size: contain;
+    right: 0;
+	opacity: 1 !important;
+    z-index: 1;
+}
+.info-box-item .info-body .info__title {
+    font-weight: 400;
+}
+.lead {
+    font-size:1.25rem;
+	font-weight:300;
+	line-height: 32px;
+}
+.slick-slide {
+  outline: none;
+}
+
+.footer-area {
+  background: #74a4ec57;/* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #74a4ec57, #fff);/*2a88b1/eee Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #74a4ec57, #fff);/*2a88b1/eee W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.footer-area:before {
+    position: absolute;
+    bottom: -90px;
+    left: 0;
+    right: 0;
+    display: block;
+    content: '';
+	width: 100vw;
+	height: 100vh;
+    background: url(../../images/carb2.png) bottom no-repeat;
+    background-size: contain;
+    opacity: 1 !important;
+}
+/******************
+custom globals
+
+FONTS
+******************/
+.section-heading .section__title,
+.section__title {
+    font-size: 2.25rem;
+    font-weight: 300;
+	line-height: 2.25rem;
+}
+.cust__meta {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: inherit;
+    border: 1px solid rgba(108, 92, 231, 0.1);
+    padding: 15px;
+    letter-spacing: 0.6px;
+    font-weight: 500;
+}
+.smash {
+    font-size: 1.55rem !important;
+}
+
+/******************
+BUTTONS
+******************/
+.btn-outline-crs-one {
+    color: #2e3d62;
+    border-color: #2e3d62;
+}
+/******************
+SPACING
+******************/
+.mt-7 {
+    margin-top: 5rem;
+}
+.mb-7 {
+    margin-bottom: 5rem;
+}
+
+/******************
+TOP BANNER low-code
+******************/
+.home-page-3 .crs-top-image-box:after {
+    position: absolute;
+    content: '';
+    bottom: -10px;
+    left: -20px;
+    width: 200px;
+    height: 200px;
+    background-image: url(../../images/dots.png);
+    background-position: center;
+    background-size: cover;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    animation: spinme 11000ms infinite linear;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+
+/******************
+3rd's
+******************/
+
+/******************
+What is
+******************/
+/*.whatis-animte::after {
+    position:absolute;
+	right: -28%;
+    top: -100px;
+	content: '';
+    width: 717px;
+    height: 717px;
+    background-image: url(../../images/index_what_is_bg.svg);
+    background-position: center;
+    background-size: cover; OR contain;
+    animation: spinme 21000ms infinite linear;
+    z-index: -1;
+    opacity: 0.3;
+}*/
+
+/******************
+Smart, scalable software 
+..your way
+******************/
+p.card-hum {
+  /*position: absolute;
+  left: 0.1em;
+  top: 0.5em;*/
+  font-size: 8em;
+  font-weight: 100;
+  color: #7f8897;
+  z-index: 1;
+}
+p.card-hum span{
+  font-size: 50%;
+}
+
+.crs-crd-img img {
+        max-width: 100%;
+        max-height: 100%;
+        display: block;
+}
+
+/******************
+intgr + typewriting code
+******************/
+.intgr {
+}
+
+.intgr-banner {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background:  url(../../images/intgr.png) bottom no-repeat;
+    background-position: center;
+    background-size: contain; 
+}
+
+.intgr-banner  [class*=img-box] {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    background: #fff;
+    border-radius: 50%;
+	text-align: center;
+	box-shadow: 10px 25px 70px rgba(31,36,44,.07);
+}
+.intgr-banner  [class*=img-box] img {
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+	width: 70px;
+}
+
+
+.intgr-banner  .img-box-two {
+    bottom: 5%;
+    left: 20%;
+    animation: jumpTwo 4.5s infinite linear;
+}
+
+.intgr-banner  .img-box-three {
+	bottom: 2%;
+	right: 20%;
+	animation: jumpThree 8.5s infinite linear;
+}
+.intgr-banner  .img-box-three img{
+	width: 50px;
+}
+
+
+
+/******************
+Typewriter animation
+with Highlight.js
+******************/
+#code {
+  white-space: pre; /* So the code won't wrap */
+  width: 480px;
+  height: 240px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  overflow-x: auto;
+  overflow-y: auto;
+  visibility: hidden;
+}
+
+/* Hiding the scrollbars */
+/* Chrome, Safari and Opera */
+#code::-webkit-scrollbar {
+    display: none;
+}
+#code {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* Blinking cursor */
+#code:after{
+    content: "|";
+    animation: hljs_blink 500ms linear infinite alternate;
+}
+
+@-webkit-keyframes hljs_blink{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+@-moz-keyframes hljs_blink{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+@keyframes hljs_blink{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+/******************
+what can i build
+carousel
+******************/
+
+.wcic {
+   position: relative
+}
+.wcic::before {
+    position: absolute;
+    bottom: -20%;
+    left: -25%;
+    display: block;
+    content: '';
+    width: 710px;
+    height: 502px;
+    background: url(../../images/47402-co.png) bottom no-repeat;
+	background-size: cover;
+	opacity: 0.2 !important;
+}
+.wcic::after {
+    position: absolute;
+    bottom: -10%;
+    right: 0%;
+    display: block;
+    content: '';
+    width: 300px;
+    height: 300px;
+    background: url(../../images/dots.png) bottom no-repeat;
+	background-size: cover;
+	opacity: 0.2 !important;
+    animation: spinme 120000ms infinite linear;
+}
+
+/* Add indicator arrow for the active tab */
+.wcic_tabs a, .wcic_tabs a:visited {
+    position: relative;
+	color: #2e3d62;
+	border: 1px solid #2e3d62;
+}
+.wcic_tabs a.active::after {
+    position: absolute;
+    left: 50%;
+	bottom: -15px;
+    margin-left: -8px;
+    width: 0;
+    height: 0;
+    content:"";
+    display:block;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-top: 8px solid #2e3d62;
+}
+
+.pill-card {
+  position:relative;
+  width: 250px;
+  height: 50px;
+  display: flex;
+  padding: 10px;
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  transition: all linear 200ms;
+  -webkit-box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    -moz-box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+/*
+.pill-card::before   {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 50px;
+    background-color: orange;
+	opacity: 0.5;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.mygreen::before   {
+    background-color: green;
+}
+.myblue::before   {
+    background-color: blue;
+}
+*/
+
+/*******************
+Options to get started
+*******************/
+.prc_background {
+  padding: 0 25px 25px;
+  position: relative;
+  width: 100%;
+}
+
+@media (min-width: 900px) {
+  .prc_background {
+    padding: 0 0 25px;
+  }
+}
+
+.prc_container {
+  margin: 0 auto;
+  padding: 50px 0 0;
+  max-width: 960px;
+  width: 100%;
+}
+
+.panel {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px 25px;
+  position: relative;
+  width: 100%;
+  z-index: 10;
+}
+
+.pricing-table {
+  box-shadow: 0px -3px 13px 0px rgba(0, 0, 0, 0.08), 0px -6px 31px 0px rgba(0, 0, 0, 0.09), 0px 8px 20px 0px rgba(0, 0, 0, 0.02);
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 900px) {
+  .pricing-table {
+    flex-direction: row;
+  }
+}
+
+.pricing-table * {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.pricing-plan {
+  border-bottom: 1px solid #e1f1ff;
+  padding: 25px;
+}
+
+.pricing-plan:last-child {
+  border-bottom: none;
+}
+
+@media (min-width: 900px) {
+  .pricing-plan {
+    border-bottom: none;
+    border-right: 1px solid #e1f1ff;
+    flex-basis: 100%;
+    padding: 25px 50px;
+  }
+
+  .pricing-plan:last-child {
+    border-right: none;
+  }
+}
+
+.pricing-img {
+  margin-bottom: 25px;
+  max-width: 130px;/*100%*/
+  max-height: 130px;
+}
+
+.pricing-header {
+  color: #888;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 1.3rem;
+}
+
+.pricing-features {
+  /*color: #016FF9;*/
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 20px 0 2px;/*50px 0 25px*/
+}
+
+.pricing-features-item {
+  /*border-top: 1px solid #e1f1ff;*/
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 5px 0;/*15 0*/
+}
+
+.pricing-features-item:last-child {
+  border-bottom: 1px solid #e1f1ff;
+}
+
+.pricing-price {
+  color: #016FF9;
+  display: block;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.pricing-button {
+  border: 1px solid #9dd1ff;
+  border-radius: 10px;
+  color: #348EFE;
+  display: inline-block;
+  margin: 25px 0;
+  padding: 15px 35px;
+  text-decoration: none;
+  transition: all 150ms ease-in-out;
+}
+
+.pricing-button:hover,
+.pricing-button:focus {
+  background-color: #e1f1ff;
+}
+
+.pricing-button.is-featured {
+  background-color: #48aaff;
+  color: #fff;
+}
+
+.pricing-button.is-featured:hover,
+.pricing-button.is-featured:active {
+  background-color: #269aff;
+}
+
+/*******************
+You are in good hands
+*******************/
+.yaigh{
+    position: relative; 
+}
+/******************
+typewriter
+******************/
+.typewriter {
+    min-height:60px;
+	margin:0 auto;
+    padding: 19.5px;
+    line-height: 1em;
+    font-family: Courier, monospace;
+	font-size: 100%;
+	background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+	display: inline-block;
+}
+
+.typewriter-text.start {/*.start class is added at isInViewport.actions.js, to start animation at viewport*/
+    display: inline-block;
+  	overflow: hidden;
+  	letter-spacing: 2px;
+ 	animation: typing 5s steps(30, end), blink .75s step-end infinite;
+    white-space: nowrap;
+    font-weight: 300;
+    border-right: 4px solid orange;
+    box-sizing: border-box;
+}
+
+@keyframes typing {
+    from { 
+        width: 0% 
+    }
+    to { 
+        width: 100% 
+    }
+}
+
+@keyframes blink {
+    from, to { 
+        border-color: transparent 
+    }
+    50% { 
+        border-color: orange; 
+    }
+}
+
+/******************
+arrows
+      <div class="line-arrow">
+        <div class="arrow-left"></div>
+        <div class="arrow-top"></div>
+        <div class="arrow-down"></div>
+        <div class="arrow-right"></div>
+      </div>
+.line-arrow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 280px;
+  margin-top: 30px;
+}
+.arrow-left {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  width: 30px;
+  height: 30px;
+  border-top: 5px solid #fff;
+  border-left: 5px solid #fff;
+}
+.arrow-top {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  width: 30px;
+  height: 30px;
+  margin-top: 15px;
+  border-top: 5px solid #fff;
+  border-left: 5px solid #fff;
+}
+.arrow-down {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  width: 30px;
+  height: 30px;
+  margin-bottom: 20px;
+  border-right: 5px solid #fff;
+  border-bottom: 5px solid #fff;
+}
+.arrow-right {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  width: 30px;
+  height: 30px;
+  border-right: 5px solid #fff;
+  border-bottom: 5px solid #fff;
+}
+******************/
+
+/******************
+INTEGRATIONS
+******************/
+
+.component-node {
+    border-radius: 4px;
+    padding: .8em .6em;
+    margin: .6em;
+    text-align: center;
+    width: 170px;
+}
+.component-node .node-icon {
+    margin: auto;
+    padding-bottom: 15px;
+}
+.node-icon-main .node-icon-wrapper {
+    width: 100%;
+    height: 100%;
+}
+.node-icon-main .node-icon-wrapper >.icon {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/******************
+MODULES
+******************/
+/*animation*/
+#ani_quad {
+  padding:100px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 100px;
+  grid-template-rows: 100px;
+}
+
+#ani_quad div {
+  grid-column: 1;
+  grid-row: 1;
+  z-index: 0;
+  position: relative; /* for z-index to work properly */
+  background-color: hsl(35, 100%, 63%);
+}
+
+.modules .title {
+    font-size: 1.3rem;
+}
