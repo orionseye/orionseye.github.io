@@ -5,11 +5,11 @@
 				<div class="img-box-three"><img src="images/intgr-hubspot.png" alt=""></div>
 <pre>
 <code class="has-text-left shadow" id="code">
-export const AppContext = createContext<{
-state: State<AppMachineContext>;
-send: (event: any) => void;
-service: Interpreter<AppMachineContext>;
-}>({ state: appMachine.initialState, send: () => {}, service: {} as any });
+export const AppContext = createContext&lt;{
+state: State&lt;AppMachineContext&gt;;
+send: (event: any) =&gt; void;
+service: Interpreter&lt;AppMachineContext&gt;;
+}&gt;({ state: appMachine.initialState, send: () =&gt; {}, service: {} as any });
 const connection = createConnection
 (serverUrl, roomId);
 connection.connect();
